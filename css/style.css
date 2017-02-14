@@ -1,0 +1,220 @@
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+html,
+body {
+  font-size: 16px;
+}
+button,
+.wrapper input,
+.wrapper textarea {
+  line-height: 1.6;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+.wrapper {
+  color: #1d1d1d;
+  width: 60%;
+  margin: auto;
+  font-size: 1em;
+}
+.wrapper input,
+.wrapper textarea {
+  -moz-appearance: none;
+  width: 80%;
+}
+.wrapper .navigation {
+  background-color: #adebeb;
+  padding: 1%;
+}
+.wrapper .navigation .search {
+  float: left;
+}
+.wrapper .navigation button {
+  float: left;
+  margin: 0;
+}
+.wrapper .navigation:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrapper .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.wrapper .form {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  background-color: #adebeb;
+  padding: 10% 1%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.wrapper .form input[type=text],
+.wrapper .form textarea {
+  margin: 1% 0 1% 0;
+  font-family: Arial;
+}
+.wrapper .centered {
+  margin: 1% 0 0 0;
+  text-align: center;
+}
+.wrapper input[type=submit],
+.wrapper button {
+  width: 20%;
+  cursor: pointer;
+  color: #ffffff;
+  background: #33cccc;
+  border: 0.2em solid #33cccc;
+  transition: all .35s ease;
+  margin-right: 1%;
+}
+.wrapper input[type=submit]:active,
+.wrapper button:active {
+  border: 0.2em solid #ffffff;
+}
+.wrapper input[type=submit]:hover,
+.wrapper button:hover {
+  border: 0.2em solid #33cccc;
+  background: #ffffff;
+  color: #33cccc;
+}
+.wrapper .list {
+  margin: 1% 0 0 0;
+}
+.wrapper .note {
+  display: block;
+  margin: 1% auto 1% auto;
+  text-align: center;
+}
+.wrapper .note-header {
+  background-color: #adebeb;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 0.1em 0;
+  width: 80%;
+  margin: auto;
+}
+.wrapper .note-body {
+  margin: 1% 0 0 0;
+}
+.wrapper .note-body p {
+  padding: 0 0 1% 0;
+}
+.wrapper .hidden {
+  display: none;
+}
