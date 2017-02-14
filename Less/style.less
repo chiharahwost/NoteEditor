@@ -1,0 +1,121 @@
+@import "./core/reset";
+@import "./core/variables";
+
+html, body {
+  font-size: 16px;
+}
+button{
+  line-height: @line;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+.wrapper {
+  color: @clr-text;
+  width: 60%;
+  margin: auto;
+  font-size: 1em;
+
+  input, textarea {
+    -moz-appearance:none;
+    width: 80%;
+    &:extend( button);
+  }
+  .navigation {
+    background-color: @clr-background;
+    padding: 1%;
+
+    .search {
+
+      float: left;
+    }
+    button {
+      float: left;
+      margin: 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .modal{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: fadeout(@clr-contrast, 40%);
+  }
+  .form {
+    position: absolute;
+    top: 20%;
+    left:20%;
+    width: 60%;
+    background-color: @clr-background;
+    padding: 10% 1%;
+    text-align: center;
+    box-sizing: border-box;
+    input[type=text], textarea {
+      margin: 1% 0 1% 0;
+      font-family: Arial;
+    }
+  }
+  .centered {
+    margin: 1% 0 0 0;
+    text-align: center;
+  }
+
+  input[type=submit], button {
+    width: 20%;
+    cursor: pointer;
+    color: @clr-contrast;
+    background: @clr-btn;
+    border: 0.2em solid @clr-btn;
+    transition: all .35s ease;
+    margin-right: 1%;
+    &:active {
+      border: 0.2em solid @clr-contrast;
+    }
+    &:hover {
+      border: 0.2em solid @clr-btn;
+      background: @clr-contrast;
+      color: @clr-btn;
+    }
+  }
+
+  .list{
+    margin: 1% 0 0 0;
+  }
+  .note{
+    display: block;
+    margin: 1% auto 1% auto;
+    text-align: center;
+
+    &-header {
+      background-color: @clr-background;
+      font-weight: bold;
+      color: @clr-contrast;
+      font-size: 1.5em;
+      padding: 0.1em 0;
+      width: 80%;
+      margin: auto;
+    }
+    &-body{
+      margin: 1% 0 0 0;
+      p {
+        padding: 0 0 1% 0;
+      }
+    }
+
+  }
+  .hidden{
+    display: none;
+  }
+}
+
+
+
+
+

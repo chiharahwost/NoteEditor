@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Note Editor</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script	src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"	integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+			crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="navigation">
+			<input type="text" placeholder="Поиск" class="search" id="search">
+			<button type="button" id="addNote">Добавить</button>
+		</div>
+
+		<section id="noteBook" class="list">
+        <ul id="notesList">
+
+
+		</ul>
+		</section>
+
+		<section class="hidden modal" id="noteNode">
+			<form id="noteForm" class="form" action="#" method="POST">
+				<input type="hidden"  name="identificator" id="identificator">
+				<input type="text" placeholder="Новый заголовок" name="title" id="title" autofocus>
+				<textarea name="note" placeholder="Текст заметки" id="description"></textarea>
+				<button type="button" id="save" name="submit">Сохранить</button
+				><button type="button" id="cancel" name="cancel">Отмена</button>
+			</form>
+		</section>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
